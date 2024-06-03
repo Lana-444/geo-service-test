@@ -1,20 +1,18 @@
-package geo;
+package ru.netology.geo;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 import ru.netology.entity.Country;
 import ru.netology.entity.Location;
-import ru.netology.geo.GeoService;
-import ru.netology.geo.GeoServiceImpl;
 
-public class GeoServiceTest {
+class GeoServiceTest {
 
     private final GeoService geoService;
     private final String USA_IP;
     private final String RUSSIA_IP;
 
 
-    public GeoServiceTest () {
+    public GeoServiceTest() {
         this.geoService = new GeoServiceImpl();
         this.USA_IP = "96.44.183.149";
         this.RUSSIA_IP = "172.0.32.0";
